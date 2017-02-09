@@ -1,0 +1,72 @@
+<script type="text/javascript">
+$(function () {
+	$('#container').highcharts({
+		chart: {
+			type: 'column'
+		},
+		title: {
+			text: 'World\'s largest cities'
+		},
+		subtitle: {
+			text: ''
+		},
+		xAxis: {
+			type: 'category',
+			labels: {
+				rotation: -45,
+				style: {
+					fontSize: '13px',
+					fontFamily: 'Verdana, sans-serif'
+				}
+			}
+		},
+		yAxis: {
+			min: 0,
+			title: {
+				text: 'Population'
+			}
+		},
+		legend: {
+			enabled: false
+		},
+		tooltip: {
+			pointFormat: 'Population: <b>{point.y}</b>'
+		},
+		series: [{
+			name: 'Population',
+			data: [
+				['City:Moscow<br/><span style="font-size:10px;">language1:Russian</span><br/><span style="font-size:10px;">language2:Tatar</span>', 8389200],
+				['City:New York<br/><span style="font-size:10px;">language1:English</span><br/><span style="font-size:10px;">language2:Spanish</span>', 8008278],
+				['City:Tokyo<br/><span style="font-size:10px;">language1:Japanese</span><br/><span style="font-size:10px;">language2:Korean</span>', 7285000],
+				['City:London<br/><span style="font-size:10px;">language1:English</span><br/><span style="font-size:10px;">language2:Kymri</span>', 7980230],
+				['City:Shanghai<br/><span style="font-size:10px;">language1:Chinese</span><br/><span style="font-size:10px;">language2:Zhuang</span>', 9696300],
+				['City:Seoul<br/><span style="font-size:10px;">language1:Korean</span><br/><span style="font-size:10px;">language2:Chinese</span>', 9981619],
+				['City:Ciudad de México<br/><span style="font-size:10px;">language1:Spanish</span><br/><span style="font-size:10px;">language2:Náhuatl</span>', 8591309],
+				['City:São Paulo<br/><span style="font-size:10px;">language1:Portuguese</span><br/><span style="font-size:10px;">language2:German</span>', 9968485],
+				['City:Jakarta<br/><span style="font-size:10px;">language1:Malay</span><br/><span style="font-size:10px;">language2:Javanese</span>', 9604900],
+				['City:Karachi<br/><span style="font-size:10px;">language1:Urdu</span><br/><span style="font-size:10px;">language2:Punjabi</span>', 9269265],
+				['City:Istanbul<br/><span style="font-size:10px;">language1:Turkish</span><br/><span style="font-size:10px;">language2:Kurdish</span>', 8787958],
+				['City:Peking<br/><span style="font-size:10px;">language1:Chinese</span><br/><span style="font-size:10px;">language2:Zhuang</span>', 7472000],
+				['City:Delhi<br/><span style="font-size:10px;">language1:Hindi</span><br/><span style="font-size:10px;">language2:Bengali</span>', 7206704],
+				['City:Mumbai (Bombay)<br/><span style="font-size:10px;">language1:Hindi</span><br/><span style="font-size:10px;">language2:Bengali</span>', 10500000],
+				['City:Cairo<br/><span style="font-size:10px;">language1:Arabic</span><br/><span style="font-size:10px;">language2:Sinaberberi</span>', 6789479],
+				['City:Roma<br/><span style="font-size:10px;">language1:Italian</span><br/><span style="font-size:10px;">language2:Sardinian</span>', 2643581],
+				['City:Melbourne<br/><span style="font-size:10px;">language1:English</span><br/><span style="font-size:10px;">language2:Italian</span>', 2865329],
+				['City:Berlin<br/><span style="font-size:10px;">language1:German</span><br/><span style="font-size:10px;">language2:Turkish</span>', 3386667]
+			],
+			dataLabels: {
+				enabled: true,
+				color: '#FFFFFF',
+				align: 'right',
+				format: '{point.y:.1f}', // one decimal
+				y: 10, // 10 pixels down from the top
+				style: {
+					fontSize: '10px',
+					fontFamily: 'Verdana, sans-serif'
+				}
+			}
+		}]
+	});
+});
+</script>
+<div id="container" style="min-width: 300px; height: 400px; margin: 0 auto"></div>
